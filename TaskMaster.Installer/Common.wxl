@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	<String Id="Company">Marhaya Abreu</String>
+
+	<String Id="ProductName_x86">Task Master (32bit)</String>
+	<String Id="ProductName_x64">Task Master (64bit)</String>
+
+	<String Id="Description">Instalador do Task Master</String>
+
+	<String Id="DowngradeErrorMessage">A newer version of Task Master is already installed.</String>
+
+	<String Id="Language">1033</String>
+</WixLocalization>

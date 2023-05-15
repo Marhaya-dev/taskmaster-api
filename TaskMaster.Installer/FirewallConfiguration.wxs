@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:fire="http://schemas.microsoft.com/wix/FirewallExtension">
+	<Fragment>
+		<Component Id="FirewallConfiguration" Directory="TARGETDIR" Guid="{73E9CF9C-B1B8-4AB2-B2CE-51F220BA28B8}" Transitive="yes">
+			<fire:FirewallException Id="FWX3"
+				Name="taskmaster-api"
+				Protocol="tcp"
+				Port="[PORT]"
+				Scope="any"
+				IgnoreFailure="yes"
+				Profile="all"
+				Program="[INSTALLFOLDER]TaskMaster.Presentation.API.exe"/>
+		</Component>
+	</Fragment>
+</Wix>
